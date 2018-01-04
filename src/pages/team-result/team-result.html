@@ -7,18 +7,11 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
+  <ion-list *ngFor="let team of teams">
     <ion-list-header>
-      チームA
+      {{team.name}}
     </ion-list-header>
-    <ion-item *ngFor="let member of team1">{{member.name}}</ion-item>
+    <ion-item *ngFor="let member of team.members">{{member.name}}</ion-item>
   </ion-list>
-  <ion-list>
-    <ion-list-header>
-      チームB
-    </ion-list-header>
-    <ion-item *ngFor="let member of team2">{{member.name}}</ion-item>
-  </ion-list>
-
   <button ion-button full (click)="gameStart()">このチームで始める</button>
 </ion-content>

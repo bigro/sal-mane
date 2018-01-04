@@ -24,10 +24,12 @@ export class HomePage {
     //TODO:指定されたチーム数に分割できるようにする(今は２チーム固定)
     let halfOfMembers = shuffleMembers.length / 2;
 
-    let team1 = shuffleMembers.slice(0, halfOfMembers);
-    let team2 = shuffleMembers.slice(halfOfMembers,);
+    let members1 = shuffleMembers.slice(0, halfOfMembers);
+    let members2 = shuffleMembers.slice(halfOfMembers,);
 
-    this.navCtrl.push(TeamResult, {'team1': team1, 'team2': team2});
+    let teams = [{name: 'チーム1', members: members1}, {name: 'チーム2', members: members2}]
+
+    this.navCtrl.push(TeamResult, {'teams': teams});
   }
 
   shuffle = array => {

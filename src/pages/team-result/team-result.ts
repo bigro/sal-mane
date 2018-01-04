@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
-import {Member} from "../../model/member";
+import {Team} from "../../model/team";
 
 @Component({
   selector: 'page-home',
@@ -8,12 +8,10 @@ import {Member} from "../../model/member";
 })
 export class TeamResult {
 
-  team1: Member[];
-  team2: Member[];
+  teams: Team[];
 
   constructor(public navCtrl: NavController, params: NavParams) {
-    this.team1 = params.get('team1');
-    this.team2 = params.get('team2');
+    this.teams = params.get('teams');
   }
 
   gameStart() {
