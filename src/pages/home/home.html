@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      メンバー
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <ion-list-header>
+      参加メンバーを選択
+    </ion-list-header>
+
+    <ion-item *ngFor="let member of members">
+      <ion-label>{{member.name}}</ion-label>
+      <ion-checkbox [(ngModel)]="member.isPlayer" checked="true"></ion-checkbox>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button full (click)="grouping()">チーム分け</button>
 </ion-content>
