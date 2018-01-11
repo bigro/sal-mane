@@ -7,12 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {TeamResult} from "../pages/team-result/team-result";
+import {BracketSummary} from "../pages/bracket-summary/bracket-summary";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    TeamResult
+    TeamResult,
+    BracketSummary
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import {TeamResult} from "../pages/team-result/team-result";
   entryComponents: [
     MyApp,
     HomePage,
-    TeamResult
+    TeamResult,
+    BracketSummary
   ],
   providers: [
     StatusBar,
