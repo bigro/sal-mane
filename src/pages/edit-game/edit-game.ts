@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
-import {Bracket} from "../../model/bracket";
+import {Bracket} from "../../model/bracket/bracket";
 
 @Component({
   selector: 'page-home',

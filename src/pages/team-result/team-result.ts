@@ -2,8 +2,8 @@ import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
 import {Team} from "../../model/team";
 import {BracketSummary} from "../bracket-summary/bracket-summary";
-import {Home} from "../../model/home";
-import {Away} from "../../model/away";
+import {Home} from "../../model/bracket/home";
+import {Away} from "../../model/bracket/away";
 
 @Component({
   selector: 'page-home',

@@ -11,14 +11,8 @@
     <ion-row justify-content-around>
       <ion-col>
         {{bracket.home.team.name}}<br>
-        <ion-select [(ngModel)]="bracket.home.point">
-          <ion-option value="0">0</ion-option>
-          <ion-option value="1">1</ion-option>
-          <ion-option value="2">2</ion-option>
-          <ion-option value="3">3</ion-option>
-          <ion-option value="4">4</ion-option>
-          <ion-option value="5">5</ion-option>
-          <ion-option value="6">6</ion-option>
+        <ion-select [(ngModel)]="bracket.home.point.value">
+          <ion-option value="{{point.value}}" *ngFor="let point of bracket.home.point.range()">{{point.value}}</ion-option>
         </ion-select>
       </ion-col>
       <ion-col>
@@ -26,14 +20,8 @@
       </ion-col>
       <ion-col>
         {{bracket.away.team.name}}<br>
-        <ion-select [(ngModel)]="bracket.away.point">
-          <ion-option value="0">0</ion-option>
-          <ion-option value="1">1</ion-option>
-          <ion-option value="2">2</ion-option>
-          <ion-option value="3">3</ion-option>
-          <ion-option value="4">4</ion-option>
-          <ion-option value="5">5</ion-option>
-          <ion-option value="6">6</ion-option>
+        <ion-select [(ngModel)]="bracket.away.point.value">
+          <ion-option value="{{point.value}}" *ngFor="let point of bracket.away.point.range()">{{point.value}}</ion-option>
         </ion-select>
       </ion-col>
     </ion-row>
