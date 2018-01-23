@@ -1,6 +1,9 @@
 import {Team} from "../team";
 import {Point} from "./point";
 
+/**
+ * ホーム
+ */
 export class Home {
   team:Team;
   point:Point;

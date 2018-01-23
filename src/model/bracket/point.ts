@@ -1,3 +1,6 @@
+/**
+ * 点数
+ */
 export class Point {
   value: number;
 
