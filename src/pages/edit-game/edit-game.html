@@ -12,7 +12,8 @@
       <ion-col>
         {{bracket.home.team.name}}<br>
         <ion-select [(ngModel)]="bracket.home.point.value">
-          <ion-option value="{{point.value}}" *ngFor="let point of bracket.home.point.range()">{{point.value}}</ion-option>
+          <ion-option value="{{point.value}}" *ngFor="let point of bracket.home.point.range()">{{point.value}}
+          </ion-option>
         </ion-select>
       </ion-col>
       <ion-col>
@@ -21,9 +22,18 @@
       <ion-col>
         {{bracket.away.team.name}}<br>
         <ion-select [(ngModel)]="bracket.away.point.value">
-          <ion-option value="{{point.value}}" *ngFor="let point of bracket.away.point.range()">{{point.value}}</ion-option>
+          <ion-option value="{{point.value}}" *ngFor="let point of bracket.away.point.range()">{{point.value}}
+          </ion-option>
         </ion-select>
       </ion-col>
     </ion-row>
+    <ion-item-group>
+      <ion-item-divider color="light">{{bracket.home.team.name}}</ion-item-divider>
+      <ion-item *ngFor="let member of bracket.home.team.members">{{member.name}}</ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="light">{{bracket.away.team.name}}</ion-item-divider>
+      <ion-item *ngFor="let member of bracket.away.team.members">{{member.name}}</ion-item>
+    </ion-item-group>
   </ion-grid>
 </ion-content>
