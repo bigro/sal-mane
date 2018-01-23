@@ -3,6 +3,7 @@
  */
 export class Point {
   value: number;
+  static Max: number = 20;
 
   constructor(value: number) {
     this.value = value;
@@ -14,7 +15,7 @@ export class Point {
 
   public range() {
     let range = [];
-    for (let i = 0; i <= 20; ++i) range.push(new Point(i));
+    for (let i = 0; i <= Point.Max; ++i) range.push(new Point(i));
 
     return range;
   }
