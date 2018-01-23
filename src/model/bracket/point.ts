@@ -3,7 +3,7 @@
  */
 export class Point {
   value: number;
-  static Max: number = 20;
+  private static Max: number = 20;
 
   constructor(value: number) {
     this.value = value;
