@@ -8,19 +8,18 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let bracket of brackets; index as i">
-      <ion-grid>
-        <ion-row justify-content-around>
-          <ion-col>
-            第{{i+1}}試合
-          </ion-col>
-          <ion-col>
-            <h2>{{bracket.home.name}} vs {{bracket.away.name}}</h2><br>
-            <!-- TODO:一旦固定 -->
-            <h3>1 - 0</h3>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item>
+      <button ion-item (click)="edit(bracket)"  *ngFor="let bracket of brackets; index as i">
+        <ion-grid>
+          <ion-row justify-content-around>
+            <ion-col>
+              第{{i+1}}試合
+            </ion-col>
+            <ion-col>
+              <h2>{{bracket.home.team.name}} vs {{bracket.away.team.name}}</h2><br>
+              <h3>{{bracket.home.point}} - {{bracket.away.point}}</h3>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </button>
   </ion-list>
 </ion-content>

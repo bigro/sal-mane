@@ -1,6 +1,7 @@
-import {Team} from "./team";
+import {Home} from "./home";
+import {Away} from "./away";
 
 export class Bracket {
-  home:Team;
-  away:Team;
+  home:Home;
+  away:Away;
 }

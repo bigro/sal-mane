@@ -1,20 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
+import {BrowserModule} from '@angular/platform-browser';
+import {ErrorHandler, NgModule} from '@angular/core';
+import {IonicApp, IonicErrorHandler, IonicModule} from 'ionic-angular';
+import {SplashScreen} from '@ionic-native/splash-screen';
+import {StatusBar} from '@ionic-native/status-bar';
 
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import {MyApp} from './app.component';
+import {HomePage} from '../pages/home/home';
 import {TeamResult} from "../pages/team-result/team-result";
 import {BracketSummary} from "../pages/bracket-summary/bracket-summary";
+import {EditGame} from "../pages/edit-game/edit-game";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     TeamResult,
-    BracketSummary
+    BracketSummary,
+    EditGame
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import {BracketSummary} from "../pages/bracket-summary/bracket-summary";
     MyApp,
     HomePage,
     TeamResult,
-    BracketSummary
+    BracketSummary,
+    EditGame
   ],
   providers: [
     StatusBar,
@@ -33,4 +36,5 @@ import {BracketSummary} from "../pages/bracket-summary/bracket-summary";
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+export class AppModule {
+}

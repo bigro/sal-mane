@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
 import {Bracket} from "../../model/bracket";
+import {EditGame} from "../edit-game/edit-game";
 
 @Component({
   selector: 'page-home',
@@ -13,5 +14,11 @@ export class BracketSummary {
 
   constructor(public navCtrl: NavController, params: NavParams) {
     this.brackets = params.get('brackets');
+  }
+
+  edit(bracket: Bracket) {
+    this.navCtrl.push(EditGame, {
+      bracket: bracket
+    });
   }
 }
