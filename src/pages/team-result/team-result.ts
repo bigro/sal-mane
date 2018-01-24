@@ -18,7 +18,6 @@ export class TeamResult {
   }
 
   gameStart() {
-    let sum = 0;
     let brackets = [];
     //TODO:２チーム前提の処理
     for (let i = 0; i < 10; i++) {
