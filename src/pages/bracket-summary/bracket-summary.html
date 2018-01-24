@@ -8,7 +8,7 @@
 
 <ion-content padding>
   <ion-list>
-      <button ion-item (click)="edit(bracket)" *ngFor="let bracket of brackets; index as i">
+      <button ion-item (click)="edit(bracket)" *ngFor="let bracket of brackets.list; index as i">
         <ion-grid>
           <ion-row justify-content-around>
             <ion-col>
