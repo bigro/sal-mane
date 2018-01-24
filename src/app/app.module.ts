@@ -9,6 +9,7 @@ import {HomePage} from '../pages/home/home';
 import {TeamResult} from "../pages/team-result/team-result";
 import {BracketSummary} from "../pages/bracket-summary/bracket-summary";
 import {EditGame} from "../pages/edit-game/edit-game";
+import {Tabs} from "../pages/tabs/tabs";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {EditGame} from "../pages/edit-game/edit-game";
     HomePage,
     TeamResult,
     BracketSummary,
-    EditGame
+    EditGame,
+    Tabs
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import {EditGame} from "../pages/edit-game/edit-game";
     HomePage,
     TeamResult,
     BracketSummary,
-    EditGame
+    EditGame,
+    Tabs
   ],
   providers: [
     StatusBar,
