@@ -6,4 +6,10 @@ import {Member} from './member';
 export class Team {
   name:string;
   members:Member[];
+
+
+  constructor(name: string, members: Member[]) {
+    this.name = name;
+    this.members = members;
+  }
 }

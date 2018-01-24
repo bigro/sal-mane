@@ -10,6 +10,7 @@ import {BracketSummary} from "../pages/bracket-summary/bracket-summary";
 import {EditGame} from "../pages/edit-game/edit-game";
 import {Tabs} from "../pages/tabs/tabs";
 import {TeamShuffle} from "../pages/team-shuffle/team-shuffle";
+import {FutsalSummary} from "../pages/futsal-summary/futsal-summary";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {TeamShuffle} from "../pages/team-shuffle/team-shuffle";
     TeamResult,
     BracketSummary,
     EditGame,
-    Tabs
+    Tabs,
+    FutsalSummary
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import {TeamShuffle} from "../pages/team-shuffle/team-shuffle";
     TeamResult,
     BracketSummary,
     EditGame,
-    Tabs
+    Tabs,
+    FutsalSummary
   ],
   providers: [
     StatusBar,
