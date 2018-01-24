@@ -6,9 +6,9 @@ import {TeamResult} from "../team-result/team-result";
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html',
+  templateUrl: 'team-shuffle.html',
 })
-export class HomePage {
+export class TeamShuffle {
 
   members = MEMBERS;
 

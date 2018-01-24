@@ -5,16 +5,16 @@ import {SplashScreen} from '@ionic-native/splash-screen';
 import {StatusBar} from '@ionic-native/status-bar';
 
 import {MyApp} from './app.component';
-import {HomePage} from '../pages/home/home';
 import {TeamResult} from "../pages/team-result/team-result";
 import {BracketSummary} from "../pages/bracket-summary/bracket-summary";
 import {EditGame} from "../pages/edit-game/edit-game";
 import {Tabs} from "../pages/tabs/tabs";
+import {TeamShuffle} from "../pages/team-shuffle/team-shuffle";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
+    TeamShuffle,
     TeamResult,
     BracketSummary,
     EditGame,
@@ -27,7 +27,7 @@ import {Tabs} from "../pages/tabs/tabs";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
+    TeamShuffle,
     TeamResult,
     BracketSummary,
     EditGame,

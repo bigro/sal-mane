@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
-import {HomePage} from "../home/home";
+import {TeamShuffle} from "../team-shuffle/team-shuffle";
 
 @Component({
   selector: 'page-home',
@@ -14,7 +14,7 @@ export class Tabs {
 
 
   constructor(public navCtrl: NavController, params: NavParams) {
-    this.home = HomePage;
-    this.futsalSummary = HomePage;
+    this.home = TeamShuffle;
+    this.futsalSummary = TeamShuffle;
   }
 }
