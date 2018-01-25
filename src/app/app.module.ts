@@ -11,6 +11,7 @@ import {EditGame} from "../pages/edit-game/edit-game";
 import {Tabs} from "../pages/tabs/tabs";
 import {TeamShuffle} from "../pages/team-shuffle/team-shuffle";
 import {FutsalSummary} from "../pages/futsal-summary/futsal-summary";
+import {Settings} from "../pages/settings/settings";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {FutsalSummary} from "../pages/futsal-summary/futsal-summary";
     BracketSummary,
     EditGame,
     Tabs,
-    FutsalSummary
+    FutsalSummary,
+    Settings
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import {FutsalSummary} from "../pages/futsal-summary/futsal-summary";
     BracketSummary,
     EditGame,
     Tabs,
-    FutsalSummary
+    FutsalSummary,
+    Settings
   ],
   providers: [
     StatusBar,
