@@ -13,6 +13,8 @@ import {TeamShuffle} from "../pages/team-shuffle/team-shuffle";
 import {FutsalSummary} from "../pages/futsal-summary/futsal-summary";
 import {Settings} from "../pages/settings/settings";
 import {TeamProfile} from "../pages/team-profile/team-profile";
+import {MembersPage} from "../pages/members/members";
+import {BattleRecordsPage} from "../pages/battle-records/battle-records";
 
 @NgModule({
   declarations: [
@@ -23,8 +25,10 @@ import {TeamProfile} from "../pages/team-profile/team-profile";
     EditGame,
     Tabs,
     FutsalSummary,
+    MembersPage,
     Settings,
-    TeamProfile
+    TeamProfile,
+    BattleRecordsPage
   ],
   imports: [
     BrowserModule,
@@ -39,8 +43,10 @@ import {TeamProfile} from "../pages/team-profile/team-profile";
     EditGame,
     Tabs,
     FutsalSummary,
+    MembersPage,
     Settings,
-    TeamProfile
+    TeamProfile,
+    BattleRecordsPage
   ],
   providers: [
     StatusBar,
