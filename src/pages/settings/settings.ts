@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
+import {TeamProfile} from "../team-profile/team-profile";
 
 @Component({
   selector: 'page-home',
@@ -10,5 +11,6 @@ export class Settings {
   constructor(public navCtrl: NavController) {}
 
   teamProfile() {
+    this.navCtrl.push(TeamProfile);
   }
 }

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      チームプロフィール
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>チーム名</ion-label>
+      <ion-input type="text" [(ngModel)]="team.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>メール</ion-label>
+      <ion-input type="text" [(ngModel)]="team.mail"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>チームメンバー</ion-list-header>
+    <ion-item *ngFor="let member of team.members">
+      {{member.name}}
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="newMember"></ion-input>
+    <button ion-button outline item-end icon-left (click)="addMember()">追加</button>
+  </ion-item>
+</ion-content>

@@ -1,4 +1,3 @@
-import {Brackets} from "./bracket/brackets";
 import {Futsal} from "./futsal";
 
 /**
@@ -6,7 +5,6 @@ import {Futsal} from "./futsal";
  */
 export class Futsals {
   list: Futsal[];
-
 
   constructor(list: Futsal[]) {
     this.list = list;

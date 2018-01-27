@@ -1,15 +1,15 @@
-import {Team} from "../team";
 import {Point} from "./point";
+import {ShuffledTeam} from "../shuffled-team";
 
 /**
  * ホーム
  */
 export class Home {
-  team:Team;
-  point:Point;
+  team: ShuffledTeam;
+  point: Point;
 
 
-  constructor(team: Team) {
+  constructor(team: ShuffledTeam) {
     this.team = team;
     this.point = Point.zero();
   }

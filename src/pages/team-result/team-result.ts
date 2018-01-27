@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
-import {Team} from "../../model/team";
 import {BracketSummary} from "../bracket-summary/bracket-summary";
 import {Home} from "../../model/bracket/home";
 import {Away} from "../../model/bracket/away";
 import {Brackets} from "../../model/bracket/brackets";
+import {ShuffledTeam} from "../../model/shuffled-team";
 
 @Component({
   selector: 'page-home',
@@ -12,7 +12,7 @@ import {Brackets} from "../../model/bracket/brackets";
 })
 export class TeamResult {
 
-  teams: Team[];
+  teams: ShuffledTeam[];
 
   constructor(public navCtrl: NavController, params: NavParams) {
     this.teams = params.get('teams');
